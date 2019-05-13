@@ -38,11 +38,14 @@
 \url{mcraealex.github.io} | \url{github.com/mcraealex} | \href{mailto:mail@alexandermcrae.com}{mail@alexandermcrae.com}
 \end{center}}
 
-% Hyperlinks styleing
+% Hyperlinks styling
 \hypersetup{
     colorlinks,
     linkcolor=blue
 }
+
+% Command to change color of single links
+\newcommand{\hrefColored}[3]{\href{#2}{\color{#1}{#3}}}
 
 \begin{document}
 
@@ -51,16 +54,16 @@
 
 \maketitle
 
-\section{Objective}
+\section{Objective \protect\includegraphics[height=1cm]{Quartz.png}}
 
-To contribute my skills as a <position> with <company>.
+To contribute my skills and continue to learn as a Software Developement Engineer at A Thinking Ape.
 
-\section{Education}
+\section{Education \protect\includegraphics[height=1cm]{Education.png}}
 
 University of Victoria \hfill September 2017 - present\\
 \textit{Bachelor of Science in Computer Science, Minor in Business}
 
-\section{Relavent Skills}
+\section{Relavent Skills \protect\includegraphics[height=1cm]{Ruby.png}}
 
 \subsection{Programming Langauges}
 
@@ -74,36 +77,36 @@ Typescript, React, Vue, Nodejs, MongoDB, SQL, Express
 
 Ray Tracing, OpenGL, WebGL
 
-\section{Projects}
+\section{Projects \protect\includegraphics[height=1cm]{Frank.png}}
 
-\subsection{Ray Tracer \href{github.com/McRaeAlex/tiny-raytracer}{github.com/McRaeAlex/tiny-raytracer}}
+\subsection{Ray Tracer \hrefColored{blue}{https://github.com/McRaeAlex/tiny-raytracer}{github.com/McRaeAlex/tiny-raytracer}}
 
 Implemented a extensible rendering engine with lighting, reflection, and 
 refraction.
 
-\subsection{Tiny URL \href{github.com/McRaeAlex/tinyURL}{github.com/McRaeAlex/tinyURL}}
+\subsection{Tiny URL \hrefColored{blue}{https://github.com/McRaeAlex/tinyURL}{github.com/McRaeAlex/tinyURL}}
 
 Developed a web applicaition that compresses URL's, allowing the user to go to 
 the shorter URL and see the original website.
 
-\subsection{Snake Engine \href{github.com/McRaeAlex/dimensional-snake-engine}{github.com/McRaeAlex/dimensional-snake-engine}}
+\subsection{Snake Engine \hrefColored{blue}{https://github.com/McRaeAlex/dimensional-snake-engine}{github.com/McRaeAlex/dimensional-snake-engine}}
 
 Build an implementation of the game Battle Snake using an entity components
 system (ecs).
 
-\subsection{Cat Camera \href{github.com/McRaeAlex/prettykitty}{github.com/McRaeAlex/prettykitty}}
+\subsection{Cat Camera \hrefColored{blue}{https://github.com/McRaeAlex/prettykitty}{github.com/McRaeAlex/prettykitty}}
 
 Using a Raspberry Pi, Twilio, and Nodejs, created a application that takes 
 pictures of my cats and sends them to me in response to a text message.
 
-\section{Experience}
+\section{Experience \protect\includegraphics[height=1cm]{trophy.png}}
 
-\subsection{Battle Snake 2019 \href{github.com/McRaeAlex/BattleSnake2019}{github.com/McRaeAlex/BattleSnake2019}}
+\subsection{Battle Snake 2019 \hrefColored{blue}{https://github.com/McRaeAlex/BattleSnake2019}{github.com/McRaeAlex/BattleSnake2019}}
 
 Participated in a local coding competition in which you create a HTTP server
 which plays a version of the game snake.
 
-\subsection{Advent Of Code \href{github.com/McRaeAlex/AdventOfCode2018}{github.com/McRaeAlex/AdventOfCode2018}}
+\subsection{Advent Of Code \hrefColored{blue}{https://github.com/McRaeAlex/AdventOfCode2018}{github.com/McRaeAlex/AdventOfCode2018}}
 
 Participated in global coding competition facing various code challenges leading
 up to christmas.
@@ -118,13 +121,5 @@ technologies.
 Predicted the landing of the rocket using real time data coming from the rocket.
 
 Experience working with a large team and many different sub teams.
-
-\section{Interests}
-
-Running, Guitar, <Social Thing>
-
-\section{References}
-
-<Enter references here>
 
 \end{document}
