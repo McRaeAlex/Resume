@@ -1,5 +1,46 @@
 \documentclass{article}
 
+% Packages
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+% Section styling
+\titleformat{\section}
+{\huge}
+{}
+{0em}
+{\bfseries}[\titlerule]
+
+% Subsection styling
+\titleformat{\subsection}
+{\large}
+{}
+{0.2em}
+{\bfseries}
+
+% Subsection spacing
+\titlespacing{\subsection}
+{0em}
+{0.25em}
+{0.25em}
+
+% Title stlying and format
+\renewcommand{\maketitle}{
+\begin{center}
+{\huge \bfseries \theauthor}
+
+\vspace{0.25em}
+\url{mcraealex.github.io} | \url{github.com/mcraealex} | \href{mailto:mail@alexandermcrae.com}{mail@alexandermcrae.com}
+\end{center}}
+
+% Hyperlinks styleing
+\hypersetup{
+    colorlinks,
+    linkcolor=blue
+}
+
 \begin{document}
 
 \title{R\'esum\'e}
@@ -13,9 +54,8 @@ To contribute my skills as a <position> with <company>.
 
 \section{Education}
 
-Bachelor of Science in Computer Science, Minor in Business
-University of Victoria
-September 2017 to present
+University of Victoria \hfill September 2017 - present\\
+\textit{Bachelor of Science in Computer Science, Minor in Business}
 
 \section{Relavent Skills}
 
@@ -29,34 +69,48 @@ Typescript, React, Vue, Nodejs, MongoDB, SQL, Express
 
 \subsection{Graphics}
 
-Ray Tracing, OpenGL
+Ray Tracing, OpenGL, WebGL
 
 \section{Projects}
 
-\subsection{Ray Tracer}
+\subsection{Ray Tracer \href{github.com/McRaeAlex/tiny-raytracer}{github.com/McRaeAlex/tiny-raytracer}}
 
-A extendable ray tracer written in Rust which implements lighting,
-refraction, and reflection.
+Implemented a extensible rendering engine with lighting, reflection, and 
+refraction.
 
-\subsection{Tiny URL}
+\subsection{Tiny URL \href{github.com/McRaeAlex/tinyURL}{github.com/McRaeAlex/tinyURL}}
 
-Implemented a URL shortener using Go, handles collisions and repeated URL's.
+Developed a web applicaition that compresses URL's, allowing the user to go to 
+the shorter URL and see the original website.
 
-\subsection{Snake Engine}
+\subsection{Snake Engine \href{github.com/McRaeAlex/dimensional-snake-engine}{github.com/McRaeAlex/dimensional-snake-engine}}
 
-Using a ECS implemented a version of the game Battle Snake.
+Build an implementation of the game Battle Snake using an entity components
+system (ecs).
 
-\subsection{Cat camera}
+\subsection{Cat Camera \href{github.com/McRaeAlex/prettykitty}{github.com/McRaeAlex/prettykitty}}
 
 Using a Raspberry Pi, Twilio, and Nodejs, created a application that takes 
 pictures of my cats and sends them to me in response to a text message.
 
 \section{Experience}
 
+
+\subsection{Battle Snake 2019}
+
+Participated in a local coding competition in which you create a HTTP server
+which plays a version of the game snake.
+
 \subsection{Web Developement Club}
 
 Take part in discussions, talks and projects in a group regarding web 
 technologies.
+
+\subsection{Rocket Club}
+
+Predicted the landing of the rocket using real time data coming from the rocket.
+
+Experience working with a large team and many different sub teams.
 
 \section{Interests}
 
