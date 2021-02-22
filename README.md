@@ -1,9 +1,6 @@
 # Resume
 
-My resume.
+## How it works
 
-## As a template
-
-If you want to use this template install tex-live and run pdflatex.
-
-This varies an incredible amount between distros.
+The dockerfile runs and polls the resume.tex for changes. Then it writes the output to the dist folder.
+This allows any linux computer to run this as docker should take care of cross distro compat.

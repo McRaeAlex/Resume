@@ -5,6 +5,7 @@
 \usepackage{titling}
 \usepackage[left=1in, right=1in, top=0.5in, bottom=1in]{geometry} % This is the margins
 \usepackage{hyperref}
+\usepackage{enumitem}
 
 % Section styling
 \titleformat{\section}
@@ -41,7 +42,8 @@
 {\huge \bfseries \theauthor}
 
 \vspace{0.25em}
-\url{mcraealex.github.io} | \url{github.com/mcraealex} | \href{mailto:mail@alexandermcrae.com}{mail@alexandermcrae.com}
+\url{mcraealex.github.io} | \url{github.com/mcraealex}
+\href{mailto:mail@alexandermcrae.com}{mail@alexandermcrae.com} | \href{https://linkedin.com/in/mcraealex}{linkedin.com/in/mcraealex}
 \end{center}}
 
 % Colored Urls
@@ -69,7 +71,7 @@
 
 \subsection{Programming Langauges}
 
-Rust, C/C++, Go, Elixir, Python, Bash, Awk
+Rust, C/C++, Go, Elixir, JavaScript, Bash, C\#, Awk
 
 \subsection{Web Developement}
 
@@ -77,7 +79,7 @@ Typescript, React, Vue, Nodejs, SQL, Webpack
 
 \subsection{Other}
 
-Vulkan, OpenGL, WebGL, Docker, FreeBSD, Linux, PostgreSQL
+Git, SQL, Docker, Linux, RISC-V, Vulkan
 
 \section{Experience}
 
@@ -93,36 +95,35 @@ Create student involvement and interest in the open source project BattleSnake.
 Organized and hosted a tournament where new students came and learned about the 
 basics of BattleSnake. Helped participants create their snakes for the tournament at the end of
 the day. Create new starter snakes (templates) which allow people to get up and 
-running quickly with BattleSnake in various languages.
+running quickly with BattleSnake in various programming languages.
 
 \section{Projects}
 
-\subsection{GumShoe \href{https://github.com/McRaeAlex/Connector/tree/main/gumshoe}{github.com/McRaeAlex/Connector/tree/main/gumshoe}}
+\subsection{MobilityFirst: Connection Upgrade Protocol \href{https://mcraealex.github.io/research/csc466}{mcraealex.github.io/research/csc466}}
 
-A bug tracker developed with my HTTP library. It is used to track bugs for itself as well as the underlying HTTP library.
+\begin{itemize}
+    \item Created a protocol and programming interface for creating sockets which allow for peers to migrate to different networks and change IP addresses without losing connections.
+\end{itemize}
 
-\subsection{Connector \href{https://github.com/McRaeAlex/Connector}{github.com/McRaeAlex/Connector}}
+\subsection{AlpineToast: Npm package to create toasts \href{https://github.com/McRaeAlex/AlpineToast}{github.com/McRaeAlex/AlpineToast}}
 
-Created a HTTP library/framework which allows for composable middleware, easy testing and high performance. Currently used in GumShoe as it's HTTP layer.
+\begin{itemize}
+    \item Created an extensible JavaScript library which allows users to create customizable toasts both programmatically and through plain HTML attributes. 
+    \item Typescript, Webpack, Rollup, TailWindCSS 
+\end{itemize}
 
-\subsection{Pipe Operator \href{https://github.com/McRaeAlex/pipe-op}{github.com/McRaeAlex/pipe-op}}
+\subsection{Village: Social media for small friend groups \href{https://github.com/McRaeAlex/village}{github.com/McRaeAlex/village}}
 
-Developed a Rust library which uses meta programming to bring the functionality of the Elixir pipe operator to Rust.
+\begin{itemize}
+    \item Developed a social media application which allows users to take control of their social media presence and only share with whom they feel comfortable.
+    \item Elixir, Postgresql, Javascript, HTML, CSS, CRUD, Websockets, PubSub, Docker
+\end{itemize}
 
-\subsection{Ray Tracer \href{https://github.com/McRaeAlex/tiny-raytracer}{github.com/McRaeAlex/tiny-raytracer}}
+\subsection{Connector: HTTP Framework \href{https://github.com/McRaeAlex/connector}{github.com/McRaeAlex/Connector}}
 
-Implemented a extensible rendering engine with lighting, reflection, and 
-refraction.
-
-\subsection{Tiny URL \href{https://github.com/McRaeAlex/tinyURL}{github.com/McRaeAlex/tinyURL}}
-
-Developed a URL compressor similar to \href{bit.ly}{bit.ly}, which can be used to share long links with a 
-shorter URL.
-
-\subsection{Vancouver CSS  \href{https://github.com/McRaeAlex/VancouverCSS}{github.com/McRaeAlex/VancouverCSS}}
-
-Created a CSS animation created to learn about some advanced features of CSS and to be 
-used as the background of my website. Checkout the website.\\
-\indent Website: \href{https://mcraealex.github.io/VancouverCSS/}{mcraealex.github.io/VancouverCSS}
+\begin{itemize}
+    \item Designed and implemented a HTTP library, language extension, and example project to better understand how high performance web servers operate.
+    \item Rust, HTTP, Async IO
+\end{itemize}
 
 \end{document}
