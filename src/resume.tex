@@ -7,6 +7,7 @@
 \usepackage{hyperref}
 \usepackage{enumitem}
 
+
 % Section styling
 \titleformat{\section}
 {\huge}
@@ -42,7 +43,7 @@
 {\huge \bfseries \theauthor}
 
 \vspace{0.25em}
-\url{mcraealex.github.io} | \url{github.com/mcraealex}
+\url{mcraealex.github.io} | \url{github.com/mcraealex} \\
 \href{mailto:mail@alexandermcrae.com}{mail@alexandermcrae.com} | \href{https://linkedin.com/in/mcraealex}{linkedin.com/in/mcraealex}
 \end{center}}
 
@@ -54,6 +55,9 @@
     colorlinks,
     linkcolor=blue
 }
+
+% List Styles
+\setlist{itemsep=.15em,parsep=0em}
 
 \begin{document}
 
@@ -71,35 +75,32 @@
 
 \subsection{Programming Langauges}
 
-Rust, C/C++, Go, Elixir, JavaScript, Bash, C\#, Awk
-
-\subsection{Web Developement}
-
-Typescript, React, Vue, Nodejs, SQL, Webpack
+Rust, C/C++, Go, Python, Elixir, JavaScript, Bash, C\#, Awk
 
 \subsection{Other}
 
-Git, SQL, Docker, Linux, RISC-V, Vulkan
+Git, SQL, Docker, Linux, RISC-V, Vulkan, React, Vue, Webpack, Travis-ci
 
 \section{Experience}
 
-\subsection{3D Programmer at \hrefColored{blue}{https://www.suntrackertech.com}{Suntracker Technologies Ltd.} (Sept 2019 - April 2020)}
+\subsection{Graphics Programmer at \hrefColored{blue}{https://www.suntrackertech.com}{Suntracker Technologies Ltd} (Sept 2019 - April 2020)}
 
-Developed an embeded 3D rendering engine from scratch using OpenGL. Participated
-in Illumination Engineering Society talks and meetings. Worked the first 4 
-months as a co-op student and then continued as a contractor.
+\begin{itemize}
+    \item Developed a Rhino3D rendering engine using specialized global illumination algorithms for analysis of CAD models. 
+    \item Participated in Illumination Engineering Society talks on industry standards and cutting edge technologies in the industry.
+    \item C\#, C/C++, OpenGL, Rhino3D, Win32 Api
+\end{itemize}
 
 \subsection{Campus Ambassador at \hrefColored{blue}{https://play.battlesnake.com/}{BattleSnake} (Jan 2020 - Current)}
 
-Create student involvement and interest in the open source project BattleSnake.
-Organized and hosted a tournament where new students came and learned about the 
-basics of BattleSnake. Helped participants create their snakes for the tournament at the end of
-the day. Create new starter snakes (templates) which allow people to get up and 
-running quickly with BattleSnake in various programming languages.
+\begin{itemize}
+    \item Worked with tech-oriented sutdent groups to organize and run Battlesnake events, tutorials, and competitions
+    \item Helped develope starter code templates in many langauges for new contestants
+\end{itemize}
 
 \section{Projects}
 
-\subsection{MobilityFirst: Connection Upgrade Protocol \href{https://mcraealex.github.io/research/csc466}{mcraealex.github.io/research/csc466}}
+\subsection{MobilityFirst: TCP Extension \href{https://mcraealex.github.io/research/csc466}{mcraealex.github.io/research/csc466}}
 
 \begin{itemize}
     \item Created a protocol and programming interface for creating sockets which allow for peers to migrate to different networks and change IP addresses without losing connections.
@@ -122,7 +123,7 @@ running quickly with BattleSnake in various programming languages.
 \subsection{Connector: HTTP Framework \href{https://github.com/McRaeAlex/connector}{github.com/McRaeAlex/Connector}}
 
 \begin{itemize}
-    \item Designed and implemented a HTTP library, language extension, and example project to better understand how high performance web servers operate.
+    \item Designed and implemented a HTTP library, language extension, and example project to better understand how high performance web servers operate. Includes pattern matching router and demo application using an async runtime.
     \item Rust, HTTP, Async IO
 \end{itemize}
 
